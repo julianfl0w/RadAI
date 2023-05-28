@@ -1,0 +1,47 @@
+.dropzone {
+  text-align: center;
+  padding: 30px;
+  border: 3px dashed #eeeeee;
+  background-color: #fafafa;
+  color: #bdbdbd;
+  cursor: pointer;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.radai {
+  padding: 30px;
+  border: 3px dashed #eeeeee;
+  /*
+  color: #ff49f3;
+  text-align: center;
+  cursor: pointer;*/
+  background-color: #fafafa;
+  margin-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+.selected-file-wrapper {
+  text-align: center;
+}
+
+.selected-file {
+  color: #000; 
+  font-weight: bold;
+}
+
+.body {
+  background-color: #363636;
+}
+
+.space {
+  margin-bottom: 10px; /* Adjust the value as needed */
+  width: 100%;
+}
+.container {
+  display: flex;
+  background-color: #363636;
+  width: 100%;
+}
+
+
