@@ -3,6 +3,7 @@ import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
 
 const SidebarMenu = () => {
   return (
+    <div className="sidebar-wrapper">
     <Sidebar>
       <Menu>
         <MenuItem> Home </MenuItem>
@@ -11,6 +12,7 @@ const SidebarMenu = () => {
         <MenuItem> Contact Us </MenuItem>
       </Menu>
     </Sidebar>
+    </div>
   );
 };
 
