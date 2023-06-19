@@ -1,7 +1,4 @@
-import SimpleWebAuthnBrowser from '@simplewebauthn/browser';
-
-// import SimpleWebAuthn auth methods
-const { startSignup } = SimpleWebAuthn;
+import { startRegistration } from "@simplewebauthn/browser";
 
 /**
  * Signup Button
@@ -17,7 +14,7 @@ document
     // Start SimpleWebAuthn Registration
     let regResp;
     try {
-      regResp = await startAuthentication(opts);
+      regResp = await startRegistration(opts);
       // if more than one transport pop one (only one is needed)
       if (regResp.transports) {
         if (regResp.transports.length == 2) {
