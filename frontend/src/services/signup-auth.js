@@ -1,5 +1,5 @@
 // import DuoAuthn auth methods
-const { startSignup } = DuoAuthn;
+import { startRegistration } from "@simplewebauthn/browser";
 /**
  * Signup Button
  */
@@ -14,7 +14,7 @@ document
     // Start DuoAuthn Registration
     let regResp;
     try {
-      regResp = await startSignup(opts);
+      regResp = await startAuthentication(opts);
       // if more than one transport pop one (only one is needed)
       if (regResp.transports) {
         if (regResp.transports.length == 2) {

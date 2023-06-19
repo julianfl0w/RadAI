@@ -1,5 +1,5 @@
 // import DuoAuthn auth methods
-const { startLogin } = DuoAuthn;
+import { startAuthentication } from '@simplewebauthn/browser';
 /**
  * Login Button
  */
@@ -14,7 +14,7 @@ document
     // Start bloc Login
     let authResp;
     try {
-      authResp = await startLogin(opts);
+      authResp = await startAuthentication(opts);
     } catch (err) {
       throw new Error(err);
     }
