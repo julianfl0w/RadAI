@@ -4,4 +4,3 @@ unworkable*
 rsna-2022-cervical-spine-fracture-detection.zip
 .venv/
 auth.txt
-.backend/auth.py
