@@ -1,5 +1,8 @@
-// import DuoAuthn auth methods
-import { startRegistration } from "@simplewebauthn/browser";
+import SimpleWebAuthnBrowser from '@simplewebauthn/browser';
+
+// import SimpleWebAuthn auth methods
+const { startSignup } = SimpleWebAuthn;
+
 /**
  * Signup Button
  */
@@ -11,7 +14,7 @@ document
     // 2. EDIT this fetch request your route that will make the api request to our server
     const resp = await fetch("/your-signup-route-here");
     const opts = await resp.json();
-    // Start DuoAuthn Registration
+    // Start SimpleWebAuthn Registration
     let regResp;
     try {
       regResp = await startAuthentication(opts);

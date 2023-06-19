@@ -6,6 +6,8 @@ import SidebarMenu from "./components/SidebarMenu";
 import Banner from "./components/Banner";
 import UploadSection from "./components/UploadSection";
 
+import React, { useEffect } from 'react';
+import './services/signup-auth.js'; // Import the file
 
 function App() {
   return (
@@ -15,6 +17,11 @@ function App() {
         <SidebarMenu />
         <UploadSection />
       </div>
+    <div>
+      {/* Your other component JSX */}
+      <button id="yourSignupBtnIDHere">Signup</button>
+    </div>
+      
     </div>
   );
 }
