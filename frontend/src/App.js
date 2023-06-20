@@ -6,7 +6,7 @@ import SidebarMenu from "./components/SidebarMenu";
 import Banner from "./components/Banner";
 import UploadSection from "./components/UploadSection";
 
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './services/signup-auth.js'; // Import the file
 
 function App() {
