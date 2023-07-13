@@ -2,4 +2,6 @@ tcia*
 NBIA*
 unworkable*
 rsna-2022-cervical-spine-fracture-detection.zip
+.venv/
+auth.txt
 frontend/radai_frontend.tar
